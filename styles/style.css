@@ -18,6 +18,7 @@ nav a:hover{
 
 .redes-sociais span{
     color: black;
+    margin-bottom: 3px;
 }
 
 .redes-sociais i{
@@ -28,4 +29,47 @@ nav a:hover{
 .redes-sociais span:hover{
     color:#7E459B;
     font-weight: 500;
+}
+
+.habilidades{
+    background-color: #7E459B;
+}
+
+.habilidades i{
+    font-size: 1.8rem;
+}
+
+/* h3, p{
+    color:white;
+}
+.habilidades h3{
+    color: white;
+} */
+
+.container-habilidades{
+    max-width: 500vw;
+    max-height: 500vh;
+}
+
+
+
+.tamanho-card{
+    width: 18rem;
+}
+
+.imagem-cards{
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+
+}
+
+.btn-card-modal{
+    color: white;
+    background-color: #7E459B;
+    border-color: #7E459B;
+}
+
+.img-ajuste{
+    width: 100%;
 }

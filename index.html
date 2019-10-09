@@ -76,7 +76,7 @@
             <div class="container text-center">
                 <h1>Angélica Zubieta</h1>
                 <h3 class="font-italic font-weight-light pb-2">Desenvolvedora front-end</h3>
-                <div class="d-flex justify-content-around redes-sociais">
+                <div class="d-flex flex-column flex-lg-row justify-content-around redes-sociais">
                     <a href="https://github.com/amzubieta" target="_blank">
                         <i class="fab fa-github-alt"></i>
                         <span>github.com/angelicazubieta</span>
@@ -96,67 +96,195 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
-        </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
-        </div>
+    <section class="bg-roxo text-white py-4">
 
-        <section>
-            <h3>Sobre</h3>
-            <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
-                magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
-                necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
-            <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
-        </section>
+        <div class="container d-flex flex-column flex-lg-row">
+
+            <div class="col-lg-6 text-center">
+
+                <h3>Habilidades</h3>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-3">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fas fa-book"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="fas fa-tasks"></i>
+                        <p>Scrum</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="col-lg-6 text-center">
+
+                <h3 class="p-2 bd-highlight text-center">Sobre</h3>
+                <p class="text-center">Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                    reprehenderit
+                    facere ea aperiam
+                    modi
+                    magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui
+                    saepe
+                    necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
+                <p class="text-center">Outras áreas de interesse: <span>metodologias ágeis, UX, Python,
+                        Clojure</span>.
+                </p>
+
+            </section>
+
     </section>
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
+    <section class="py-4">
+        <div class="container text-center">
+            <h3>Portfólio</h3>
+            <!-- cards -->
+            <div class="row justify-content-around">
+
+                <!-- card 1 -->
+                <div class="tamanho-card card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-01.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Alfonsina Estrada</h5>
+                        <p class="card-text">Parte do projeto M de Maravilhiosa...</p>
+                        <a href="#" class="btn btn-card-modal" data-toggle="modal" data-target="#modal01">Visitar</a>
+                    </div>
+                </div>
+
+                <!-- modal card 1 -->
+                <div class="modal" tabindex="-1" role="dialog" id="modal01">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Projeto Alfonsina Estrada</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Parte do projeto M de Maravilhiosa desenvolvido durate o Bootcamp de FrontEnd de {reprograma}.</p>
+                                <img class="img-ajuste" src="./assets/images/modal-01.png" alt="Pagina Alfonsina">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-card-modal">Visitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="tamanho-card card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-02.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda de Tareas</h5>
+                        <p class="card-text">Parte do projeto Agenda de tareas...</p>
+                        <a href="#" class="btn btn-card-modal" data-toggle="modal" data-target="#modal02">Visitar</a>
+                    </div>
+                </div>
+                <!-- modal card 2 -->
+                <div class="modal" tabindex="-1" role="dialog" id="modal02">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Agenda de Tareas</h5>
+                                <button type="button" class="close btn-card-modal" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Parte do projeto Agenda de tareas desenvolvido durate o Bootcamp de FrontEnd de {reprograma}.</p>
+                                <img class="img-ajuste" src="./assets/images/modal-02.png" alt="Pagina Tarefas">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-card-modal">Visitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="tamanho-card card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-03.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Metrô Linha Azul</h5>
+                        <p class="card-text">Parte do projeto Linhas do Metrô.</p>
+                        <a href="#" class="btn btn-card-modal" data-toggle="modal" data-target="#modal03">Visitar</a>
+                    </div>
+                </div>
+
+                <!-- modal card 3 -->
+                <div class="modal" tabindex="-1" role="dialog" id="modal03">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Projeto Metrô Linha Azul</h5>
+                                <button type="button" class="close bg-roxo" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Parte do projeto Linhas do Metrô. Desenvolvido durate o Bootcamp de FrontEnd de {reprograma}.</p>
+                                <img class="img-ajuste" src="./assets/images/modal-03.png" alt="Pagina Linha Azul">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-card-modal">Visitar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
     </section>
 
     <!-- footer -->
-    <footer>
+    <footer class="bg-roxo text-center text-white">
         <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
                     target="_blank">{reprograma}</a></span> 2019</small>
     </footer>

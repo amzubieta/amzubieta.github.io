@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="icon" href="img/checkmark.png" type="image/x-icon" /> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Lista de Tarefas</title>
+    </head>
+        <body>
+            <section class="container">
+                <div class="principal">
+                    <h1>Lista de Tarefas <br><a>Dois cliques para marcar a atividade como feita, um clique para desmarcar </a></h1>
+                    <form id='formulario'>
+                        <input autocomplete="off" type="text" class="input-de-texto" id='campo' placeholder="Insira uma nova tarefa" >
+                        <button id='botao'class="botao" type="submit">ADD</button>
+                        <p id='mensagemErro' class='erro'>Por favor, Digite uma tarefa!</p>
+                    </form>
+                    <div class="botoes">
+                        <button id='excluirTodas'>Excluir tudo</button>
+                        <button id='selecionarTodas'>Selecionar tudo</button>
+                        <button id='removerCompletos'>Remover Completos</button>
+                    </div>
+                </div>  
+                <div id='div1'>
+                    <!-- <div class="estilo">
+                        <p>tarefa</p>
+                        <button>X</button>
+                    </div> -->
+                </div>
+            </section>
+        <script src="./js/script.js"></script>   
+    </body>
+</html>
